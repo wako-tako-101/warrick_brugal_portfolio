@@ -1,0 +1,22 @@
+#Title{
+    color: paleturquoise;
+    padding-top: 20px;
+    font-family: monospace;
+}
+
+
+nav{
+    background: none;
+    background-color: black;
+    position: fixed;
+    font-family: monospace;
+    color:aliceblue;
+    padding: 5px;
+    text-decoration: none;
+}
+
+a.nav-link{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+}

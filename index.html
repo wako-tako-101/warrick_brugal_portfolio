@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!--<link rel="icon" type="image/x-icon" href="favicon.ico"/>-->
+        <title>Warrick Brugal's Website | Home</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <nav>
+        <ul>
+            <!-- Navigation links will be added here in the future -->
+            <a class = "nav-link" href="https://www.linkedin.com/in/warrick-brugal">LinkedIn</a>
+            <a class = "nav-link" href="projects.html">Projects</a>
+
+            <!-- <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li> -->
+        </ul>
+    </nav>
+
+    <body>
+        <h1>Home Page</h1>
+        <p>This is a placeholder page for Warrick Brugal's personal website.</p>
+        <br>
+
+        <h2>About Me</h2>
+            <p>Warrick Brugal is a student at the 
+            <a href="https://www.ufl.edu">University of Florida</a>, 
+            pursuing a major in Digital Arts and Sciences
+            and a minor in Computer Science.
+            </p>
+        <br>
+
+        
+        
+
+        <footer>
+            <hr>
+            <p>More content will be added here in the future...</p>
+
+            <!-- script to dynamically add the current month and year -->
+            <script>
+            // Get the current year
+            const currentYear = new Date().getFullYear();
+            const currentMonth = new Date().getMonth() + 1; // Months are zero-based
+            var currentMonthText = String("");
+
+            switch(currentMonth){ // Convert month number to month name
+                case 1:
+                    currentMonthText = "January";
+                    break;
+                case 2:
+                    currentMonthText = "February";
+                    break;
+                case 3:
+                    currentMonthText = "March";
+                    break;
+                case 4:
+                    currentMonthText = "April";
+                    break;
+                case 5:
+                    currentMonthText = "May";
+                    break;
+                case 6:
+                    currentMonthText = "June";
+                    break;
+                case 7:
+                    currentMonthText = "July";
+                    break;
+                case 8:
+                    currentMonthText = "August";
+                    break;
+                case 9:
+                    currentMonthText = "September";
+                    break;
+                case 10:
+                    currentMonthText = "October";
+                    break;
+                case 11:
+                    currentMonthText = "November";
+                    break;
+                case 12:
+                    currentMonthText = "December";
+                    break;
+                default:
+                    currentMonthText = "Unknown Month";
+                    break;
+            }
+
+            // Create a paragraph element
+            const yearParagraph = document.createElement('p');
+
+            // Set the text content to include the current year
+            yearParagraph.textContent = `Last Updated: ${currentMonthText} ${currentYear}, by Warrick Brugal.`;
+            // Append the paragraph to the body
+            document.body.appendChild(yearParagraph);
+            </script>
+        </footer>
+    </body>
+</html>
+
+
+
