@@ -4,19 +4,57 @@
     font-family: monospace;
 }
 
+body{
+    margin: 10px auto;
+    background-color: darkslategray;
+}
 
-nav{
-    background: none;
-    background-color: black;
-    position: fixed;
+h1{
+    background-color: darkgreen;
+    text-align: center;
+    padding: 10px;
     font-family: monospace;
-    color:aliceblue;
-    padding: 5px;
+    color: papayawhip;
+}
+
+
+nav ul{
+    list-style-type: none;
+    background: none;
+    position: fixed; 
+    margin: 0px;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-family: monospace;
+    color: aliceblue;
     text-decoration: none;
 }
 
+nav ul li{
+    display: inline;
+}
+
 a.nav-link{
-    color: aliceblue;
+    background-color:darkcyan;
+    color: papayawhip;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
+}
+
+a.nav-link:hover{
+    background-color: darkcyan;
+    color: darkslategray;
+    background: silver;
+    padding: 5px;
+}
+
+.content{
+    max-width: fit-content;
+    margin: 80px auto;
+    text-align: center;
+    font-family: monospace;
+    color :paleturquoise;
+    padding: 20px;
 }

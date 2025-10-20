@@ -4,47 +4,56 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <!--<link rel="icon" type="image/x-icon" href="favicon.ico"/>-->
+
         <title>Warrick Brugal's Website | Home</title>
-        <link rel="stylesheet" href="style.css"/>
-        Testing commit
-        Another test
+        <link rel="stylesheet" href="style.css"/>   
+        <script src="script.js"></script>
+
     </head>
 
-    <nav>
-        <ul>
-            <!-- Navigation links will be added here in the future -->
-            <a class = "nav-link" href="https://www.linkedin.com/in/warrick-brugal">LinkedIn</a>
-            <a class = "nav-link" href="projects.html">Projects</a>
-
-            <!-- <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li> -->
-        </ul>
-    </nav>
-
+    <!-- Navigation links will be added here in the future -->
     <body>
-        <h1>Home Page</h1>
-        <p>This is a placeholder page for Warrick Brugal's personal website.</p>
-        <br>
+        <nav>
+            <div>
+                <ul>
+                    <li><a class = "nav-link" href="projects.html">Projects</a></li>
+                    <li><a class = "nav-link" href="contactinfo.html">Contact Info</a></li>
+                    
 
-        <h2>About Me</h2>
-            <p>Warrick Brugal is a student at the 
-            <a href="https://www.ufl.edu">University of Florida</a>, 
-            pursuing a major in Digital Arts and Sciences
-            and a minor in Computer Science.
-            </p>
-        <br>
+                    <!-- <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li> -->
+                </ul>
+            </div>
+        </nav>
+
+        <main class= "content">
+            <h1>Home Page</h1>
+            <p>This is a  page for Warrick Brugal's personal website.</p>
+            <br>
+            
+            <section id = "Bio">
+                <h2>About Me</h2>
+                    <p>Warrick Brugal is a student at the 
+                    <a href="https://www.ufl.edu">University of Florida</a>, 
+                    pursuing a major in Digital Arts and Sciences
+                    and a minor in Computer Science.
+                    </p>
+                <br>
+            </section>
+        </main>
 
         
         
 
         <footer>
             <hr>
-            <p>More content will be added here in the future...</p>
+            <p>More content will be added here in the future...</p>             
+        </footer>
 
-            <!-- script to dynamically add the current month and year -->
-            <script>
+        <!-- script to dynamically add the current month and year -->
+        <script>
             // Get the current year
             const currentYear = new Date().getFullYear();
             const currentMonth = new Date().getMonth() + 1; // Months are zero-based
@@ -99,8 +108,8 @@
             yearParagraph.textContent = `Last Updated: ${currentMonthText} ${currentYear}, by Warrick Brugal.`;
             // Append the paragraph to the body
             document.body.appendChild(yearParagraph);
-            </script>
-        </footer>
+        </script>
+
     </body>
 </html>
 
